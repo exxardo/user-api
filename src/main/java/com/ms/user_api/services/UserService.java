@@ -10,13 +10,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
-    final
-    UserRepository userRepository;
-    UserProducer userProducer;
+    private final UserRepository userRepository;
+    private final UserProducer userProducer;
 
-    // Injeção de dependência do UserRepository
-    public UserService(UserRepository userRepository) {
+    // Injeção de dependência do UserRepository e UserProducer
+    public UserService(UserRepository userRepository, UserProducer userProducer) {
         this.userRepository = userRepository;
+        this.userProducer = userProducer;
     }
 
     // Método para salvar um usuário
