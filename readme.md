@@ -84,13 +84,13 @@ Cadastra um novo usuário no sistema.
 No arquivo `src/main/resources/application.properties`, configure as seguintes propriedades:
 
 ```properties
-spring.datasource.url=jdbc:postgresql://<host>:<port>/<database>
-spring.datasource.username=<username>
-spring.datasource.password=<password>
-broker.queue.email.name=<nome-da-fila>
-spring.rabbitmq.host=<host-rabbitmq>
-spring.rabbitmq.username=<username>
-spring.rabbitmq.password=<password>
+server.port=8081
+spring.datasource.url= jdbc:postgresql://localhost:5432/db_user
+spring.datasource.username=postgres
+spring.datasource.password=SENHA DB
+spring.jpa.hibernate.ddl-auto=update
+spring.rabbitmq.addresses=URL BROKER
+broker.queue.email.name=defaut.email
 ```
 
 ---
