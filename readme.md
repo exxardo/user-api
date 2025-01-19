@@ -44,7 +44,9 @@ Essa arquitetura foi escolhida por ser escalável, desacoplada e permitir a fác
 - **PostgreSQL**
 - **RabbitMQ** (CloudAMQP)
 - **Maven**
-
+- **IntelliJ Idea**
+- **Postman**
+- **Draw Io**
 ---
 
 ## Endpoints da API
