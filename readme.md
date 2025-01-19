@@ -22,9 +22,9 @@ Abaixo está a arquitetura geral do sistema, que inclui o **User API**, o **Emai
 
 ### Explicação da Arquitetura
 
-- **User API**: Responsável por gerenciar os dados dos usuários e publicar eventos no RabbitMQ.
+- **User API**: Salva o usuário criado em um banco de dados PostgreeSQL e publica eventos relacionados aos usuários no RabbitMQ.
 - **RabbitMQ**: Atua como um broker de mensagens, permitindo comunicação assíncrona entre os microsserviços.
-- **Email Microservice**: Consome as mensagens publicadas pelo User API e envia notificações por e-mail.
+- **Email Microservice**: Consome as mensagens publicadas pelo User API, envia notificações por e-mail e salva informações relacionadas a mensagem enviada em uma tabela no banco de dados PostgreeSQL.
 
 Essa arquitetura foi escolhida por ser escalável, desacoplada e permitir a fácil adição de novos consumidores sem impactar o serviço principal.
 
