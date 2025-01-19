@@ -1,5 +1,7 @@
 # User API
 
+### Esta é a primeira parte do projeto e é possivel encontrar a segunda aqui: [Microsserviço de Email](https://github.com/exxardo/email-ms).
+
 ## Descrição
 O **User API** é um microsserviço responsável por gerenciar os usuários do sistema. Ele permite realizar operações como salvar usuários no banco de dados e publicar mensagens para outros serviços através do RabbitMQ.
 
