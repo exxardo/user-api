@@ -9,7 +9,7 @@ O **User API** é um microsserviço responsável por gerenciar os usuários do s
 
 Abaixo está a arquitetura geral do sistema, que inclui o **User API**, o **Email Microservice**, e a comunicação via RabbitMQ utilizando a CloudAMQP:
 
-![Arquitetura do Sistema](Arquitetura do Sistema.png)
+![Arquitetura do Sistema](https://github.com/exxardo/user-api/blob/0999e47830665f013e7e9c5b7526ad8a8fe775df/Arquitetura%20do%20Sistema.png)
 
 ---
 
